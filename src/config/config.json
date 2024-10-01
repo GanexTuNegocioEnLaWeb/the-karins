@@ -1,6 +1,6 @@
 {
   "site": {
-    "title": "Imprenta Karins",
+    "title": "Imprenta Karins | Impresión de Alta Calidad en Santa Cruz - Bolivia - Tarjetas, Banners y Más",
     "base_url": "https://imprentakarins.com",
     "base_path": "/",
     "trailing_slash": false,
@@ -8,7 +8,7 @@
     "logo": "/images/logo.png",
     "logo_width": "80",
     "logo_height": "40",
-    "logo_text": "Imprenta Karins"
+    "logo_text": "Imprenta Karins | Calidad en Impresión"
   },
 
   "params": {
@@ -21,6 +21,6 @@
   "metadata": {
     "meta_author": "Imprenta Karins",
     "meta_image": "/images/favicon.png",
-    "meta_description": "Imprenta Karins"
+    "meta_description": "Imprenta Karins - Expertos en impresión de alta calidad en Santa Cruz. Ofrecemos una amplia gama de productos personalizados, desde tarjetas de presentación y volantes hasta catálogos y banners. Solicita cotizaciones en línea de manera rápida y sencilla. Con años de experiencia en el sector, garantizamos resultados profesionales para tu negocio o evento."
   }
 }

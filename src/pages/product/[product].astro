@@ -3,7 +3,7 @@ import { products } from "@/consts/products";
 import Base from "@/layouts/Base.astro";
 
 // components
-import SearchComponent from "@/layouts/components/Search.astro";
+import SearchComponent from "@/components/Search.tsx"
 // params
 const { product } = Astro.params;
 if (!product) return Astro.redirect("/");
@@ -25,7 +25,7 @@ if (!resultado) return Astro.redirect("/");
   <section class="section banner relative">
     <div class="container">
       <div class="w-full max-w-96 mx-auto">
-        <SearchComponent />
+        <SearchComponent client:load />
       </div>
       <section
         class="grid place-items-center grid-cols-1 gap-4 lg:grid-cols-2 mt-8 py-8 px-10 bg-white shadow-md rounded-md max-w-4xl mx-auto"

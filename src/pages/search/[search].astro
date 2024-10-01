@@ -2,7 +2,7 @@
 import Base from "@/layouts/Base.astro";
 import { mostrarResultados } from "@/lib/utils/search";
 // components
-import SearchComponent from "@/layouts/components/Search.astro";
+import SearchComponent from "@/components/Search.tsx"
 // params
 const { search } = Astro.params;
 
@@ -19,7 +19,7 @@ const resultados = mostrarResultados(search);
   <section class="section banner relative">
     <div class="container">
       <div class="w-full max-w-96 mx-auto">
-        <SearchComponent />
+        <SearchComponent client:load />
       </div>
       <h2 class="text-center my-8">Resultados para "{search}"</h2>
       <section class="flex justify-center flex-wrap gap-4">
