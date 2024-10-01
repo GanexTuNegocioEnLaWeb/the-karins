@@ -1,0 +1,124 @@
+---
+import { products } from "@/consts/products";
+import Base from "@/layouts/Base.astro";
+
+// components
+import SearchComponent from "@/layouts/components/Search.astro";
+// params
+const { product } = Astro.params;
+if (!product) return Astro.redirect("/");
+
+const resultado = products
+  .filter((item) => item.name === product)
+  .map(({ name, minBudget }) => ({ name, minBudget }))
+  .shift();
+
+if (!resultado) return Astro.redirect("/");
+---
+
+<Base
+  title={`Imprenta Karins | ${resultado.name}`}
+  meta_title={`Imprenta Karins | ${resultado.name}`}
+  description={`Imprenta Karins | ${resultado.name}`}
+  image="/image/favicon.png"
+>
+  <section class="section banner relative">
+    <div class="container">
+      <div class="w-full max-w-96 mx-auto">
+        <SearchComponent />
+      </div>
+      <section
+        class="grid place-items-center grid-cols-1 gap-4 lg:grid-cols-2 mt-8 py-8 px-10 bg-white shadow-md rounded-md max-w-4xl mx-auto"
+      >
+        <div class="mb-8">
+          <h3>{resultado.name}</h3>
+          <p class="mt-2">
+            El <span class="text-primary"
+              >precio mínimo por unidad es de Bs. {resultado.minBudget}</span
+            >. Si pides más unidades, <span class="text-primary"
+              >ajustamos el precio</span
+            >.
+          </p>
+          <p class="mt-1">
+            Indícanos tu <span class="text-primary">presupuesto</span>, <span
+              class="text-primary">cantidad</span
+            > y <span class="text-primary">detalles del producto</span>.
+          </p>
+          <p class="mt-1">
+            ¡Cuanta más información nos des, mejor será tu cotización! <span
+              class="text-primary">Estamos aquí para ayudarte</span
+            >.
+          </p>
+        </div>
+        <form class="grid gap-2" id="form-cotizar">
+          <!-- <p>Cotiza tu proyecto</p> -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
+            <div>
+              <label for="input-minBudget">Mi Presupuesto</label>
+              <input
+                id="input-minBudget"
+                type="number"
+                min={resultado.minBudget}
+                value={resultado.minBudget}
+                placeholder="Mi presupuesto"
+                class="text-neutral-800 w-full"
+                required
+              />
+            </div>
+            <div>
+              <label for="input-quantity">Cantidad</label>
+              <input
+                id="input-quantity"
+                type="number"
+                min="1"
+                value="1"
+                placeholder="Cant. Producto"
+                class="text-neutral-800 w-full"
+                required
+              />
+            </div>
+          </div>
+          <div class="">
+            <label for="input-description">Nota de tu proyecto</label>
+            <textarea
+              id="input-description"
+              placeholder="Ej: Quiero el producto con X tamaño, X diseño y también..."
+              minlength="20"
+              required
+              class="h-20 max-h-96 block w-full text-neutral-800"></textarea>
+          </div>
+          <button class="btn btn-primary">Pedir Cotización</button>
+        </form>
+      </section>
+    </div>
+  </section>
+</Base>
+
+<script is:inline define:vars={{ resultado }}>
+  const $form = document.getElementById("form-cotizar");
+  const $inputMinBudget = document.getElementById("input-minBudget");
+  const $inputQuantity = document.getElementById("input-quantity");
+  const $inputDescription = document.getElementById("input-description");
+  const nameProduct = resultado.name;
+
+  if (!$form || !$inputMinBudget || !$inputQuantity || !$inputDescription) {
+    console.error("No se encontraron elementos");
+  } else {
+    $form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      // validate
+      const valueMinBudget = $inputMinBudget.value.trim();
+      const valueQuantity = $inputQuantity.value.trim();
+      const valueDescription = $inputDescription.value.trim();
+      if (!valueMinBudget || !valueQuantity || !valueDescription) return;
+
+      // Create the WhatsApp link with dynamic values
+      const whatsappUrl = `https://api.whatsapp.com/send?phone=59168773067&text=*Hola%2C%20Imprenta%20Karins.*%0A%0AMe%20gustar%C3%ADa%20que%20me%20haga%20una%20cotizaci%C3%B3n%20de%3A%0A*Producto%3A*%20${encodeURIComponent(nameProduct)}%0A*Cantidad%3A*%20${encodeURIComponent(valueQuantity)}%0A*Presupuesto%3A*%20Bs.%20${encodeURIComponent(valueMinBudget)}%0A*Nota%3A*%20${encodeURIComponent(valueDescription)}%0A%0AMe%20responde%20a%20la%20brevedad%20posible%2C%C2%A0muchas%C2%A0gracias.`;
+      // const whatsappUrl = `https://api.whatsapp.com/send?phone=59168773067&text=*Hola%2C%20Imprenta%20Karins.*%0A%0AMe%20gustar%C3%ADa%20que%20me%20haga%20una%20cotizaci%C3%B3n%20de%3A%0A*Producto%3A*%20${encodeURIComponent(nameProduct)}%0A*Cantidad%3A*%20${encodeURIComponent(valueQuantity)}%0A*Presupuesto%3A*%20Bs.%20${encodeURIComponent(valueMinBudget)}%0A%0AMe%20responde%20a%20la%20brevedad%20posible%2C%C2%A0muchas%C2%A0gracias.`;
+
+      // Redirect to WhatsApp
+      window.open(whatsappUrl, '_blank');
+    });
+  }
+</script>
+

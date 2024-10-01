@@ -2,28 +2,21 @@
 import { markdownify } from "@/lib/utils/textConverter";
 import { Image } from "astro:assets";
 const { banner } = Astro.props;
-const { title, button, image, content } = banner;
+const { title, image, content } = banner;
+import Search from "./Search.astro";
 ---
 
 <section class="section banner relative">
   <div class="container">
-    <div class="row items-center">
+    <div class="row items-center gap-8 lg:gap-0">
       <div class="lg:col-6">
         <h1 class="banner-title" set:html={markdownify(title)} />
-
-        <p class="mt-6" set:html={markdownify(content)} />
-
-        {
-          button.enable && (
-            <a class="btn btn-white mt-8" href={button.link}>
-              {button.label}
-            </a>
-          )
-        }
+        <p class="mt-6 mb-4" set:html={markdownify(content)} />
+        <Search />
       </div>
       <div class="lg:col-6">
         <Image
-          class="w-full object-contain"
+          class="w-full object-contain rounded-md"
           alt="banner"
           src={image}
           width={603}

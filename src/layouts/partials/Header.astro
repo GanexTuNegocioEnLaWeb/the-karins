@@ -1,4 +1,5 @@
 ---
+import social from "@/config/social.json";
 import Logo from "@/components/Logo.astro";
 import menu from "@/config/menu.json";
 
@@ -49,16 +50,15 @@ const { pathname } = Astro.url;
       </svg>
     </label>
     <!-- /navbar toggler -->
-
     <ul
       id="nav-menu"
-      class="navbar-nav order-3 hidden w-full lg:order-1 lg:flex lg:w-auto lg:space-x-2"
+      class="navbar-nav order-3 hidden w-full space-y-2 pt-4 lg:p-0 lg:space-y-0 lg:order-1 lg:flex lg:w-auto lg:space-x-2"
     >
       {
         main.map((menu) => (
           <>
             {menu.hasChildren ? (
-              <li class="nav-item nav-dropdown group relative cursor-pointer  dropdown-button">
+              <li class="nav-item nav-dropdown group relative cursor-pointer dropdown-button">
                 <span
                   class={`nav-link inline-flex items-center ${
                     menu.children?.map(({ url }) => url).includes(pathname) ||
@@ -111,13 +111,15 @@ const { pathname } = Astro.url;
         ))
       }
       <li class="nav-item mt-2 lg:hidden">
-        <a class="btn btn-white btn-sm border-border" href="/signin">
-          Sing Up Now</a
-        >
+        <a href={social.whatsapp} target="_blank" rel="noopener noreferrer" class="btn btn-white btn-sm border-border">
+          Contactanos
+        </a>
       </li>
     </ul>
     <div class="order-1 ml-auto hidden items-center md:order-2 md:ml-0 lg:flex">
-      <a class="btn btn-white btn-sm" href="/signin"> Sing Up Now</a>
+      <a href={social.whatsapp} target="_blank" rel="noopener noreferrer" class="btn btn-white btn-sm border-border">
+        Contactanos
+      </a>
     </div>
   </nav>
 </header>
@@ -133,8 +135,10 @@ const { pathname } = Astro.url;
   });
 
   //sticky header
-  document.addEventListener("astro:page-load", () => {
+  document.addEventListener("DOMContentLoaded", () => {
     const header = document.querySelector(".header");
+    if (window.scrollY > 0) header.classList.add("header-sticky");
+
     window.addEventListener("scroll", () => {
       if (window.scrollY > 0) {
         header.classList.add("header-sticky");

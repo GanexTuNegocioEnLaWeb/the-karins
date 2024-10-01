@@ -1,0 +1,76 @@
+---
+import Base from "@/layouts/Base.astro";
+import { mostrarResultados } from "@/lib/utils/search";
+// components
+import SearchComponent from "@/layouts/components/Search.astro";
+// params
+const { search } = Astro.params;
+
+if (!search) return Astro.redirect("/");
+const resultados = mostrarResultados(search);
+---
+
+<Base
+  title={`Imprenta Karins | Resultados para "${search}"`}
+  meta_title={`Imprenta Karins | Resultados para "${search}"`}
+  description={`Imprenta Karins | Resultados para "${search}"`}
+  image="/image/favicon.png"
+>
+  <section class="section banner relative">
+    <div class="container">
+      <div class="w-full max-w-96 mx-auto">
+        <SearchComponent />
+      </div>
+      <h2 class="text-center my-8">Resultados para "{search}"</h2>
+      <section class="flex justify-center flex-wrap gap-4">
+        {
+          resultados.length === 0 && (
+            <div class="flex flex-col items-center gap-4 text-center">
+              <h4>No se encontraron resultados</h4>
+              <p class="max-w-96">¡Prueba con otra búsqueda!</p>
+              <p class="max-w-96">
+                Si no encuentras lo que necesitas, contáctanos y haremos
+                realidad tu idea.
+              </p>
+              <a
+                href="http://localhost:3000"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-primary"
+              >
+                Hablemos
+              </a>
+            </div>
+          )
+        }
+        {
+          resultados.map((item) => (
+            <div class="w-full max-w-80 bg-white shadow-md rounded-md py-8 px-6 flex flex-col min-h-56 justify-between">
+              <h4 class="capitalize">{item}</h4>
+              <a href={`/product/${item}`} class="btn btn-primary ">
+                Ver Detalle
+              </a>
+            </div>
+          ))
+        }
+      </section>
+      {
+        resultados.length > 0 && (
+        <div class="flex flex-col items-center gap-4 text-center mt-8">
+        <p class="max-w-96">
+          Si a pesar de los resultados no encuentras lo que buscas, no dudes en contactarnos para hacer realidad tus idea.
+        </p>
+        <a
+          href="http://localhost:3000"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-primary"
+        >
+          Hablemos
+        </a>
+      </div>
+        )
+      }
+    </div>
+  </section>
+</Base>

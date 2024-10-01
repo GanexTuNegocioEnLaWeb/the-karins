@@ -1,9 +1,9 @@
 {
-  "facebook": "https://facebook.com/",
-  "twitter": "https://twitter.com/",
+  "facebook": "https://www.facebook.com/profile.php?id=100069931400247",
+  "twitter": "",
   "instagram": "",
   "youtube": "",
-  "linkedin": "https://linkedin.com/",
+  "linkedin": "",
   "github": "",
   "gitlab": "",
   "medium": "",
@@ -16,7 +16,7 @@
   "tumblr": "",
   "reddit": "",
   "vk": "",
-  "whatsapp": "",
+  "whatsapp": "https://api.whatsapp.com/send?phone=59168773067&text=Hola%2C%20estoy%20interesado%20en%20sus%20servicios%20de%20imprenta.%20%C2%BFPodr%C3%ADan%20darme%20m%C3%A1s%20informaci%C3%B3n%20y%20una%20cotizaci%C3%B3n%3F%20Gracias.",
   "snapchat": "",
   "vimeo": "",
   "tiktok": "",
@@ -25,6 +25,6 @@
   "email": "",
   "phone": "",
   "address": "",
-  "skype": "https://skype.com/",
+  "skype": "",
   "website": ""
 }

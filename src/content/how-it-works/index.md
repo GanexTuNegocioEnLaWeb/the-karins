@@ -1,38 +1,37 @@
 ---
-title: How It Works
-page_title: our structured approach helps you navigate uncertainties
+title: Imprenta Karins | Cómo trabajamos
+page_title: Descubre nuestro proceso de impresión
 
 
 # perfomance
 perfomance:
-  - title: market profetionals
-    description: Encourage frequent & timely recognition integrating with communication tools
-    image: "/images/how-it-work/results.png"
-  - title: measurable results
-    description: Encourage frequent & timely recognition integrating with communication tools
-    image: "/images/how-it-work/market-professionals.png"
-  - title: international award
-    description: Encourage frequent & timely recognition integrating with communication tools
-    image: "/images/how-it-work/awards.png"
+  - title: Planificación
+    description: Tomamos el tiempo necesario para entender tus necesidades y crear un plan a medida que se adapte a ti.
+    image: "/images/how-it-work/planificacion.png"
+  - title: Diseño
+    description: Diseñamos con creatividad y pasión para que tus ideas se expresen de la mejor manera posible.
+    image: "/images/how-it-work/diseno.png"
+  - title: Producción
+    description: Usamos tecnología de vanguardia para asegurar resultados excepcionales en cada impresión que realizamos.
+    image: "/images/how-it-work/production.png"
 # works
 our_works:
-  - title: We'll do the legwork so you don't have to.
-    image: "/images/how-it-work/image-1.png"
+  - title: Impresión y Publicidad
+    image: "/images/how-it-work/papeleria-personalizada-2.png"
     list:
-      - Supporting more than 119 country world
-      - Open transaction with more than currencies
-      - Customer Service with 79 languages
-  - title: We'll do the legwork so you don't have to.
-    image: "/images/how-it-work/image-2.png"
+      - Banners vibrantes ideales para eventos y promociones.
+      - Folletos personalizables que capturan la atención de tu audiencia.
+      - Carteles luminosos que destacan tu negocio en cualquier lugar.
+  - title: Papelería Personalizada
+    image: "/images/how-it-work/papeleria-personalizada.png"
     list:
-      - Supporting more than 119 country world
-      - Open transaction with more than currencies
-      - Customer Service with 79 languages
-  - title: Check out their profiles, reviews On.
-    image: "/images/how-it-work/image-3.png"
+      - Agendas personalizadas perfectas para uso corporativo.
+      - Tarjetas de presentación de alta calidad que dejan una impresión duradera.
+      - Folder personalizado que agrega un toque profesional a tus presentaciones.
+  - title: Productos Promocionales
+    image: "/images/how-it-work/productos-promocionales.png"
     list:
-      - Supporting more than 119 country world
-      - Open transaction with more than currencies
-      - Customer Service with 79 languages
+      - Tazas personalizadas que son regalos memorables y útiles.
+      - Llaveros prácticos que llevan tu marca a todas partes.
+      - Poleras personalizadas ideales para eventos y promociones.
 ---
-Donec sollicitudin molestie malesda. Donec sollitudin molestie malesuada. Mauris pellentesque <br /> nec, egestas non nisi. Cras ultricies ligula sed magna dictum porta.Lorem

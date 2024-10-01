@@ -1,49 +1,26 @@
 {
   "site": {
-    "title": "Pinwheel Astro",
-    "base_url": "https://pinwheel-astro.vercel.app",
+    "title": "Imprenta Karins",
+    "base_url": "https://imprentakarins.com",
     "base_path": "/",
     "trailing_slash": false,
     "favicon": "/images/favicon.png",
     "logo": "/images/logo.png",
-    "logo_width": "147",
-    "logo_height": "31",
-    "logo_text": "Pinwheel"
-  },
-
-  "settings": {
-    "pagination": 6,
-    "summary_length": 100,
-    "blog_folder": "blog"
-  },
-
-  "call_to_action": {
-    "title": "Helping teams in the world with focus",
-    "description": "Lorem ipsum dolor sit sed dmi amet, consectetur adipiscing. Cdo tellus, sed condimentum volutpat.",
-    "button": {
-      "label": "Download The Theme",
-      "link": "https://themefisher.com/astro-themes/pinwheel-astro"
-    }
-  },
-
-  "disqus": {
-    "enable": true,
-    "shortname": "themefisher-template",
-    "settings": {}
+    "logo_width": "80",
+    "logo_height": "40",
+    "logo_text": "Imprenta Karins"
   },
 
   "params": {
-    "footer_description": "Lorem ipsum dolor sit sed dmi amet, consectetur adipiscing. Cdo tellus, sed condimentum volutpat.",
-    "email": "info@andromeda.io",
-    "location": "2118 Thornridge Cir. Syracuse, Connecticut 35624",
-    "phone": "+704-555-0127",
-    "contact_form_action": "#",
-    "copyright": "Copyright © 2023 a theme by [Themefisher](https://themefisher.com)"
+    "footer_description": "Nos enfocamos en ofrecer productos de alta calidad y plazos de entrega competitivos.",
+    "location": "Calle José Callaú N° 26 casi esq. Ayacucho (Santa Cruz - Bolivia)",
+    "phone": "+591 687-73067",
+    "copyright": "Sitio web hecho por Ganex"
   },
 
   "metadata": {
-    "meta_author": "Themefisher",
-    "meta_image": "/images/og-image.png",
-    "meta_description": "pinwheel astro"
+    "meta_author": "Imprenta Karins",
+    "meta_image": "/images/favicon.png",
+    "meta_description": "Imprenta Karins"
   }
 }

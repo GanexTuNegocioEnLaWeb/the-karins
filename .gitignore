@@ -24,3 +24,8 @@ package-lock.json
 
 # ignore .astro directory
 .astro
+
+# jetbrains setting folder
+.idea/
+
+.vercel/
