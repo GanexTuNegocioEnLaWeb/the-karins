@@ -1,26 +1,26 @@
 {
   "site": {
-    "title": "Imprenta Karins | Impresión de Alta Calidad en Santa Cruz - Bolivia - Tarjetas, Banners y Más",
-    "base_url": "https://imprentakarins.com",
-    "base_path": "/",
-    "trailing_slash": false,
-    "favicon": "/images/favicon.png",
-    "logo": "/images/logo.png",
-    "logo_width": "80",
-    "logo_height": "40",
-    "logo_text": "Imprenta Karins | Calidad en Impresión"
+  "title": "Imprenta Karins | Impresión de Alta Calidad en Santa Cruz - Bolivia",
+  "base_url": "https://imprentakarins.com",
+  "base_path": "/",
+  "trailing_slash": false,
+  "favicon": "/images/favicon.png",
+  "logo": "/images/logo.png",
+  "logo_width": "80",
+  "logo_height": "40",
+  "logo_text": "Imprenta Karins | Calidad en Impresión"
   },
 
   "params": {
-    "footer_description": "Nos enfocamos en ofrecer productos de alta calidad y plazos de entrega competitivos.",
-    "location": "Calle José Callaú N° 26 casi esq. Ayacucho (Santa Cruz - Bolivia)",
-    "phone": "+591 687-73067",
-    "copyright": "Sitio web hecho por Ganex"
+  "footer_description": "Nos enfocamos en ofrecer productos de alta calidad y plazos de entrega competitivos.",
+  "location": "Calle José Callaú N° 26 casi esq. Ayacucho (Santa Cruz - Bolivia)",
+  "phone": "+591 687-73067",
+  "copyright": "Sitio web hecho por Ganex"
   },
 
   "metadata": {
-    "meta_author": "Imprenta Karins",
-    "meta_image": "/images/favicon.png",
-    "meta_description": "Imprenta Karins - Expertos en impresión de alta calidad en Santa Cruz. Ofrecemos una amplia gama de productos personalizados, desde tarjetas de presentación y volantes hasta catálogos y banners. Solicita cotizaciones en línea de manera rápida y sencilla. Con años de experiencia en el sector, garantizamos resultados profesionales para tu negocio o evento."
+  "meta_author": "Imprenta Karins",
+  "meta_image": "/images/favicon.png",
+  "meta_description": "Imprenta Karins - Expertos en impresión de alta calidad en Santa Cruz. Ofrecemos una amplia gama de productos personalizados, desde tarjetas de presentación y volantes hasta catálogos y banners. Solicita cotizaciones en línea de manera rápida y sencilla. Con años de experiencia en el sector, garantizamos resultados profesionales para tu negocio o evento."
   }
 }

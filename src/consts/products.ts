@@ -731,6 +731,7 @@ export const products = [
     name: "agendas personalizadas",
     minBudget: 200,
     synonyms: [
+      "cuadernos",
       "agendas con logo",
       "agendas de diseño",
       "agendas para empresas",
@@ -744,6 +745,7 @@ export const products = [
     name: "agendas escolares",
     minBudget: 200,
     synonyms: [
+      "cuadernos",
       "agendas estudiantiles",
       "agendas para estudiantes",
       "agendas de diseño",
@@ -757,6 +759,7 @@ export const products = [
     name: "agendas corporativa",
     minBudget: 200,
     synonyms: [
+      "cuadernos",
       "agendas de empresa",
       "agendas personalizadas",
       "agendas con logo",
@@ -770,6 +773,7 @@ export const products = [
     name: "agendas institucionales",
     minBudget: 200,
     synonyms: [
+      "cuadernos",
       "agendas personalizadas",
       "agendas de instituciones",
       "agendas de diseño",
@@ -788,6 +792,7 @@ export const products = [
     name: "agendas en anillados metálicos",
     minBudget: 200,
     synonyms: [
+      "cuadernos",
       "agendas encuadernadas",
       "agendas con anillas",
       "agendas en espiral",
@@ -802,6 +807,7 @@ export const products = [
     name: "agendas en anillados plásticos",
     minBudget: 200,
     synonyms: [
+      "cuadernos",
       "agendas de plástico",
       "agendas encuadernadas en plástico",
       "agendas ligeras",
@@ -3501,6 +3507,7 @@ export const products = [
     name: "agendas personalizadas con con alto relieve",
     minBudget: 200,
     synonyms: [
+      "cuadernos",
       "relieve",
       "agendas con logo",
       "agendas de diseño",
@@ -3515,6 +3522,7 @@ export const products = [
     name: "agendas escolares con con alto relieve",
     minBudget: 200,
     synonyms: [
+      "cuadernos",
       "relieve",
       "agendas estudiantiles",
       "agendas para estudiantes",
@@ -3529,6 +3537,7 @@ export const products = [
     name: "agendas corporativa con con alto relieve",
     minBudget: 200,
     synonyms: [
+      "cuadernos",
       "relieve",
       "agendas de empresa",
       "agendas personalizadas",
@@ -3543,6 +3552,7 @@ export const products = [
     name: "agendas institucionales con con alto relieve",
     minBudget: 200,
     synonyms: [
+      "cuadernos",
       "relieve",
       "agendas personalizadas",
       "agendas de instituciones",
@@ -3562,6 +3572,7 @@ export const products = [
     name: "agendas en anillados metálicos con con alto relieve",
     minBudget: 200,
     synonyms: [
+      "cuadernos",
       "relieve",
       "agendas encuadernadas",
       "agendas con anillas",
@@ -3577,6 +3588,7 @@ export const products = [
     name: "agendas en anillados plásticos con con alto relieve",
     minBudget: 200,
     synonyms: [
+      "cuadernos",
       "relieve",
       "agendas de plástico",
       "agendas encuadernadas en plástico",
